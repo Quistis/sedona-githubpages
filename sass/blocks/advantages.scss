@@ -1,0 +1,23 @@
+.advantages {
+  background-color: $bg-white;
+
+  margin-bottom: 30px;
+
+  padding-top: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 100%;
+
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1200px;
+
+    padding-top: 50px;
+  }
+}

@@ -1,0 +1,31 @@
+.page-footer {
+  background-color: $bg-white;
+
+  padding-bottom: 20px;
+}
+
+.page-footer--diff-paddings {
+  padding-top: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .page-footer--diff-paddings {
+    padding-top: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-footer--diff-paddings {
+    padding-top: 33px;
+  }
+}

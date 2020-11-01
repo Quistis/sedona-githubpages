@@ -1,0 +1,1099 @@
+.feedback-form__full-name {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  border: none;
+
+  padding: 0;
+
+  margin-bottom: 45px;
+}
+
+/*----Перенес эту полоску в feedback-intro::before------*/
+/*.feedback-form__full-name::before {
+  position: absolute;
+
+  content: "";
+
+  top: -19px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: $bg-palegrey;
+}*/
+
+.feedback-form__full-name::after {
+  position: absolute;
+
+  content: "";
+
+  bottom: -26px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: $bg-palegrey;
+}
+
+.feedback-form__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  width: 100%;
+}
+
+.feedback-form__legend {
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: 700;
+  color: $text-black;
+
+  text-align: center;
+}
+
+.feedback-form__legend--fullname {
+  margin-bottom: 21px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback-form__label {
+  font-size: $font-size-medium;
+  line-height: $line-height-big;
+  font-weight: 400;
+  color: $text-lightgrey;
+
+  text-align: left;
+
+  margin-left: 17px;
+}
+
+.feedback-form__input {
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: 700;
+  color: $text-black;
+
+  text-align: left;
+
+  height: 58px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 22px;
+
+  margin-left: 12px;
+
+  border: none;
+  background-color: $bg-whitegreyish;
+
+  &::placeholder {
+    color: inherit;
+    opacity: 1;
+  }
+}
+
+.feedback-form__input:hover {
+  background-color: $bg-palegrey;
+}
+
+.feedback-form__input:active,
+.feedback-form__input:focus {
+  background-color: $bg-white;
+  border: 4px solid $bg-palegrey;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+}
+
+.feedback-form__input:invalid {
+  outline-color: $bg-pinkyred;
+}
+
+.feedback-form__label--fullname {
+  width: 71px;
+
+  padding-top: 17px;
+}
+
+.feedback-form__label--surname {
+  width: 154px;
+
+  padding-top: 17px;
+}
+
+.feedback-form__label--patronymic {
+  width: 145px;
+
+  padding-top: 17px;
+}
+
+.feedback-form__input--fullname {
+  /*width: 230px;*/
+  min-width: 66.5%;
+  width: 100%;
+
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.feedback-form__input--surname {
+  /*width: 192px;*/
+  min-width: 60.5%;
+  width: 100%;
+
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.feedback-form__input--patronymic {
+  /*width: 194px;*/
+  min-width: 61.5%;
+  width: 100%;
+
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.feedback-form__contacts {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  border: none;
+
+  padding: 0;
+
+  margin-bottom: 47px;
+}
+
+.feedback-form__contacts::before {
+  position: absolute;
+
+  content: "";
+
+  bottom: -29px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: $bg-palegrey;
+}
+
+.feedback-form__legend--contacts {
+  margin-bottom: 19px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback-form__label--contacts,
+.feedback-form__label--email {
+  display: block;
+
+  padding-left: 22px;
+
+  margin-bottom: 7px;
+}
+
+.feedback-form__phone-wrapper {
+  position: relative;
+
+  min-width: 320px;
+}
+
+.feedback-form__phone-wrapper::before {
+  content: "";
+
+  position: absolute;
+  top: 33px;
+  right: 23px;
+
+  width: 58px;
+  height: 58px;
+
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 20px;
+  background-color: $bg-darkgrey;
+}
+
+.feedback-form__input--phone {
+  /*min-width: 280px;*/
+  width: 87.5%;
+
+  margin-left: 17px;
+  margin-bottom: 12px;
+
+  padding-right: 57px;
+}
+
+.feedback-form__email-wrapper {
+  position: relative;
+
+  min-width: 320px;
+}
+
+.feedback-form__email-wrapper::before {
+  content: "";
+
+  position: absolute;
+  top: 33px;
+  right: 23px;
+
+  width: 58px;
+  height: 58px;
+
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 21px;
+  background-color: $bg-darkgrey;
+}
+
+.feedback-form__input--email {
+  /*min-width: 280px;*/
+  width: 87.5%;
+
+  margin-left: 17px;
+
+  padding-right: 57px;
+}
+
+.feedback-form__impression {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  border: none;
+
+  padding: 0;
+
+  margin-bottom: 17px;
+}
+
+.feedback-form__impression::before {
+  position: absolute;
+
+  content: "";
+
+  bottom: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: $bg-palegrey;
+}
+
+.feedback-form__legend--impression {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*-------------Стили для центровки на мобилке------*/
+.feedback-form__impression-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 36px;
+}
+
+.feedback-form__label--impression {
+  position: relative;
+
+  /*margin-left: 96px;*/
+  width: 185px;
+  margin-left: 60px;
+}
+/*-------------------------------------------------------*/
+
+.feedback-form__input--impression + .feedback-form__label--impression {
+  display: block;
+
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: 700;
+  text-transform: none;
+  color: $text-black;
+
+  margin-bottom: 44px;
+}
+
+.feedback-form__input--impression + .feedback-form__label--impression::before {
+  content: "";
+
+  position: absolute;
+  top: -12px;
+  left: -77px;
+
+  width: 55px;
+  height: 55px;
+
+  /*border: 2px solid $bg-whitegreyish;*/
+  border-radius: 50%;
+  background-color: $bg-whitegreyish;
+}
+
+.feedback-form__input--impression:checked + .feedback-form__label--impression::after {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: -61px;
+
+  width: 22px;
+  height: 22px;
+
+  /*border: 0 solid $bg-darkergrey;*/
+  border-radius: 50%;
+  background-color: $bg-darkergrey;
+}
+
+.feedback-form__input--impression + .feedback-form__label--impression:hover::before {
+  background-color: $bg-palegrey;
+}
+
+.feedback-form__input--impression + .feedback-form__label--impression:active::before {
+  background-color: $bg-lightlydarkgrey;
+}
+
+.feedback-form__input--impression + .feedback-form__label--impression:active::after {
+  background-color: $bg-lightlydarkgrey;
+}
+
+.feedback-form__input--impression:checked + .feedback-form__label--impression:active::after {
+  background-color: $bg-darkergrey;
+  opacity: 0.3;
+}
+
+.feedback-form__showplace {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  border: none;
+
+  padding: 0;
+
+  margin-bottom: 6px;
+}
+
+.feedback-form__showplace::before {
+  position: absolute;
+
+  content: "";
+
+  bottom: 12px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: $bg-palegrey;
+}
+
+.feedback-form__legend--showplace {
+  margin-bottom: 31px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------Стили для центровки на главной*------------*/
+.feedback-form__showplace-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-form__label--showplace {
+  position: relative;
+
+  /*margin-left: 96px;*/
+
+  width: 125px;
+  margin-left: 0;
+}
+/*--------------------------------------------------------*/
+
+.feedback-form__input--showplace + .feedback-form__label--showplace {
+  display: block;
+
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: 700;
+  text-transform: none;
+  color: $text-black;
+
+  margin-bottom: 54px;
+}
+
+.feedback-form__input--showplace + .feedback-form__label--showplace::before {
+  content: "";
+
+  position: absolute;
+  top: -12px;
+  left: -77px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 5px;
+  background-color: $bg-whitegreyish;
+}
+
+
+.feedback-form__input--showplace:checked + .feedback-form__label--showplace::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: -61px;
+
+  width: 24px;
+  height: 16px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feedback-form__input--showplace + .feedback-form__label--showplace:hover::before {
+  background-color: $bg-palegrey;
+}
+
+.feedback-form__input--showplace + .feedback-form__label--showplace:active::before {
+  background-color: $bg-lightlydarkgrey;
+}
+
+.feedback-form__input--showplace + .feedback-form__label--showplace:active::after {
+  background-color: $bg-lightlydarkgrey;
+}
+
+.feedback-form__input--showplace:checked + .feedback-form__label--showplace:active::after {
+  opacity: 0.3;
+}
+
+.feedback-form__review {
+  display: block;
+  border: none;
+
+  padding: 0;
+
+  margin-bottom: 51px;
+}
+
+.feedback-form__legend--review {
+  margin-bottom: 17px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback-form__textarea {
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: 700;
+  color: $text-black;
+
+  display: block;
+
+  width: 87.5%;
+  min-height: 160px;
+
+  padding-top: 16px;
+  padding-left: 22px;
+
+  margin-left: 18px;
+
+  border: none;
+  background-color: $bg-whitegreyish;
+
+  &::placeholder {
+    color: inherit;
+  }
+}
+
+.feedback-form__button {
+  width: 87.5%;
+
+  margin-left: 19px;
+}
+
+.feedback-form__required-fields {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .feedback-form__full-name {
+    width: 320px;
+    min-height: 300px;
+
+    margin-bottom: 67px;
+
+    order: 2;
+  }
+
+  .feedback-form__full-name::before,
+  .feedback-form__full-name::after {
+    display: none;
+  }
+
+  .feedback-form__legend--fullname {
+    font-size: $font-size-largest;
+
+    text-align: left;
+
+    margin-bottom: 57px;
+    margin-left: 54px;
+  }
+
+  .feedback-form__wrapper {
+    display: block;
+  }
+
+  .feedback-form__label--fullname {
+    margin-left: 55px;
+  }
+
+  .feedback-form__label--surname {
+    margin-left: 55px;
+  }
+
+  .feedback-form__label--patronymic {
+    margin-left: 55px;
+  }
+
+  .feedback-form__input--fullname {
+    min-width: 213px;
+    width: 213px;
+
+    margin-right: 0;
+    margin-left: 11px;
+  }
+
+  .feedback-form__input--surname {
+    min-width: 176px;
+    width: 176px;
+
+    margin-left: 12px;
+    margin-right: 0;
+  }
+
+  .feedback-form__input--patronymic {
+    min-width: 180px;
+    width: 180px;
+
+    margin-left: 12px;
+    margin-right: 0;
+  }
+
+  .feedback-form__contacts {
+    width: 648px;
+    justify-content: center;
+
+    margin: 0 0;
+    margin-bottom: 30px;
+
+    order: 3;
+  }
+
+  .feedback-form__contacts::before {
+    display: none;
+  }
+
+  .feedback-form__legend--contacts {
+    font-size: $font-size-largest;
+
+    position: relative;
+
+    margin-bottom: 24px;
+  }
+
+  .feedback-form__legend--contacts::before {
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    left: -188px;
+
+    width: 126px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
+  }
+
+  .feedback-form__legend--contacts::after {
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    right: -183px;
+
+    width: 126px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
+  }
+
+  .feedback-form__label--contacts,
+  .feedback-form__label--email {
+    padding-left: 3px;
+
+    margin-bottom: 7px;
+  }
+
+  .feedback-form__phone-wrapper::before,
+  .feedback-form__email-wrapper::before {
+    right: 1px;
+  }
+
+  .feedback-form__input--phone,
+  .feedback-form__input--email {
+    width: 648px;
+
+    margin-left: 0;
+    margin-bottom: 23px;
+  }
+
+  .feedback-form__impression {
+    position: relative;
+
+    width: 320px;
+    min-height: 300px;
+
+    order: 1;
+  }
+
+  .feedback-form__impression::before {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    right: -2px;
+
+    width: 1px;
+    height: 292px;
+
+    background-color: $bg-darkishgrey;
+  }
+
+  .feedback-form__legend--impression {
+    font-size: $font-size-largest;
+
+    text-align: left;
+
+    margin-left: 0;
+  }
+
+  .feedback-form__impression-wrapper {
+    display: block;
+
+    padding-top: 74px;
+  }
+
+  .feedback-form__label--impression {
+    margin-left: 74px;
+  }
+
+  .feedback-form__input--impression + .feedback-form__label--impression {
+    margin-bottom: 52px;
+  }
+
+  .feedback-form__showplace {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 460px;
+
+    margin: 0 auto;
+    margin-bottom: 21px;
+
+    order: 4;
+  }
+
+  .feedback-form__showplace::before {
+    display: none;
+  }
+
+  .feedback-form__showplace-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 460px;
+  }
+
+  .feedback-form__legend--showplace {
+    position: relative;
+
+    font-size: $font-size-largest;
+
+    width: 290px;
+
+    margin-bottom: 55px;
+  }
+
+  .feedback-form__legend--showplace::before {
+    content: "";
+
+    position: absolute;
+    top: 25px;
+    left: -179px;
+
+    width: 125px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
+  }
+
+  .feedback-form__legend--showplace::after {
+    content: "";
+
+    position: absolute;
+    top: 25px;
+    right: -180px;
+
+    width: 125px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
+  }
+
+  .feedback-form__label--showplace {
+    width: 122px;
+
+    margin-left: 79px;
+  }
+
+  .feedback-form__input--showplace + .feedback-form__label--showplace {
+    margin-bottom: 63px;
+  }
+
+  .feedback-form__review {
+    width: 648px;
+
+    margin: 0 0;
+    margin-bottom: 58px;
+
+    order: 5;
+  }
+
+  .feedback-form__legend--review {
+    position: relative;
+
+    font-size: $font-size-largest;
+
+    margin-bottom: 57px;
+  }
+
+  .feedback-form__legend--review::before {
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    left: -199px;
+
+    width: 125px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
+  }
+
+  .feedback-form__legend--review::after {
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    right: -198px;
+
+    width: 125px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
+  }
+
+  .feedback-form__textarea {
+    width: 648px;
+
+    margin-left: 0;
+  }
+
+  .feedback-form__button {
+    width: 324px;
+
+    margin-left: 0;
+
+    padding-top: 16px;
+    padding-left: 33px;
+
+    order: 6;
+  }
+
+  .feedback-form__required-fields {
+    display: block;
+
+    padding-top: 6px;
+
+    order: 7;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form {
+    width: 960px;
+  }
+
+  .feedback-form__full-name {
+    width: 400px;
+
+    margin-bottom: 66px;
+  }
+
+  .feedback-form__wrapper {
+    width: 400px;
+  }
+
+  .feedback-form__legend--fullname {
+    margin-bottom: 57px;
+    margin-left: 2px;
+  }
+
+  .feedback-form__label--fullname {
+    margin-left: 1px;
+  }
+
+  .feedback-form__label--surname {
+    margin-left: 1px;
+  }
+
+  .feedback-form__label--patronymic {
+    margin-left: 1px;
+  }
+
+  .feedback-form__input--fullname {
+    width: 347px;
+
+    margin-bottom: 20px;
+  }
+
+  .feedback-form__input--surname {
+    width: 310px;
+  }
+
+  .feedback-form__input--patronymic {
+    width: 313px;
+  }
+
+  .feedback-form__contacts {
+    display: block;
+
+    width: 960px;
+
+    margin-bottom: 53px;
+
+    order: 3;
+  }
+
+  .feedback-form__legend--contacts {
+    font-size: 21px;
+    position: relative;
+    margin-bottom: 73px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feedback-form__legend--contacts::before {
+    top: 12px;
+    left: -341px;
+
+    width: 280px;
+  }
+
+  .feedback-form__legend--contacts::after {
+    top: 12px;
+    right: -341px;
+
+    width: 280px;
+  }
+
+  .feedback-form__contacts-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 960px;
+  }
+
+  .feedback-form__phone-wrapper,
+  .feedback-form__email-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 480px;
+  }
+
+  .feedback-form__phone-wrapper::before {
+    top: 0;
+    right: 79px;
+  }
+
+  .feedback-form__email-wrapper::before {
+    top: 0;
+    right: 0;
+  }
+
+  .feedback-form__label--contacts {
+    display: block;
+
+    width: 70px;
+
+    margin-left: 0;
+    margin-bottom: 0;
+
+    padding-left: 0;
+  }
+
+  .feedback-form__label-camouflage {
+    display: none;
+  }
+
+  .feedback-form__label--email {
+    width: 150px;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .feedback-form__input--phone,
+  .feedback-form__input--email {
+    width: 315px;
+
+    margin-left: 16px;
+    margin-bottom: 0;
+  }
+
+  .feedback-form__impression {
+    width: 400px;
+  }
+
+  .feedback-form__impression::before {
+    right: -79px;
+  }
+
+  .feedback-form__legend--impression {
+    margin-left: 77px;
+  }
+
+  .feedback-form__impression-wrapper {
+    padding-top: 72px;
+  }
+
+  .feedback-form__label--impression {
+    margin-left: 77px;
+  }
+
+  .feedback-form__showplace {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 960px;
+  }
+
+  .feedback-form__legend--showplace {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feedback-form__legend--showplace::before {
+    top: 25px;
+    left: -334px;
+
+    width: 280px;
+  }
+
+  .feedback-form__legend--showplace::after {
+    top: 25px;
+    right: -337px;
+
+    width: 280px;
+  }
+
+  .feedback-form__showplace-wrapper {
+    width: 960px;
+  }
+
+  .feedback-form__showplace-wrapper .feedback-form__label--showplace:last-child {
+    margin-left: 60px;
+  }
+
+  .feedback-form__review {
+    width: 960px;
+  }
+
+  .feedback-form__legend--review {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 56px;
+  }
+
+  .feedback-form__legend--review::before {
+    content: "";
+
+    position: absolute;
+    top: 11px;
+    left: -354px;
+
+    width: 280px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
+  }
+
+  .feedback-form__legend--review::after {
+    content: "";
+
+    position: absolute;
+    top: 11px;
+    right: -356px;
+
+    width: 280px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
+  }
+
+  .feedback-form__textarea {
+    width: 960px;
+  }
+
+  .feedback-form__button {
+    width: 480px;
+
+    padding-left: 46px;
+  }
+}

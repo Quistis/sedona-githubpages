@@ -1,0 +1,155 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: $bg-white;
+
+  text-align: center;
+}
+
+.social__hashtag {
+  display: block;
+
+  font-size: $font-size-largest;
+  line-height: $line-height-big;
+  font-weight: 700;
+  color: $text-black;
+
+  margin-bottom: 35px;
+}
+
+.social__social-list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 152px;
+
+  margin-bottom: 28px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 46px;
+  height: 50px;
+
+  background-color: $bg-lightblue;
+  border: none;
+
+  &:hover,
+  &focus {
+    background-color: $bg-darkblue;
+  }
+
+  &:active {
+    background-color: $bg-darkerblue;
+  }
+}
+
+.social__social-icon {
+  fill: #ffffff;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__developer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 131px;
+}
+
+.social__developed-by {
+  font-size: $font-size-medium;
+  line-height: $line-height-big;
+  font-weight: 400;
+  color: $text-black;
+}
+
+.social__developer-link {
+  color: $text-black;
+
+  padding-top: 7px;
+}
+
+.social__developer-icon {
+  fill: #000000;
+
+  &:hover,
+  &:focus {
+    fill: $bg-lightblue;
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    flex-direction: row;
+
+    width: 100%;
+  }
+
+  .social__hashtag {
+    margin-bottom: 0;
+  }
+
+  .social__social-list {
+    margin-bottom: 0;
+  }
+
+  .social__developer-icon {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    width: 1200px;
+    justify-content: flex-start;
+  }
+
+  .social__hashtag {
+    /*width: 266px;*/
+    width: 140px;
+    margin-left: 117px;
+  }
+
+  .social__social-list {
+    justify-content: center;
+    /*width: 369px;*/
+    width: 151px;
+    margin-left: 265px;
+  }
+
+  .social__item {
+    margin-left: 5px;
+  }
+
+  .social__developer-wrapper {
+    justify-content: center;
+
+    /*width: 271px;*/
+    width: 140px;
+    margin-left: auto;
+    margin-right: 114px;
+  }
+
+  .social__developer-icon {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+}

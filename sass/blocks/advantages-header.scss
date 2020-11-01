@@ -1,0 +1,43 @@
+.advantages-header {
+  background-color: $bg-white;
+
+  text-align: center;
+
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.advantages-header__slogan {
+  display: block;
+
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: 700;
+  color: $text-black;
+}
+
+.advantages-header__intro {
+  display: block;
+  padding-top: 13px;
+
+  font-size: $font-size-medium;
+  line-height: $line-height-big;
+  font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-header {
+    padding-bottom: 37px;
+  }
+
+  .advantages-header__slogan {
+    font-size: $font-size-largest;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-header__intro {
+    padding-top: 13px;
+  }
+}

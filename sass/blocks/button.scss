@@ -1,0 +1,36 @@
+.button {
+  font-size: $font-size-largest;
+  line-height: $line-height-big;
+  font-weight: 700;
+  color: $text-white;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  width: 280px;
+  min-height: 58px;
+
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  background-color: $bg-lightblue;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-darkblue;
+  }
+
+  &:active {
+    background-color: $bg-darkerblue;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $bg-palegrey;
+    color: $text-white;
+  }
+}

@@ -1,0 +1,23 @@
+.feedback {
+  background-color: $bg-white;
+
+  padding-bottom: 73px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: 768px;
+
+    margin: 0 auto;
+
+    padding-bottom: 93px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    width: 1200px;
+
+    padding-bottom: 99px;
+  }
+}

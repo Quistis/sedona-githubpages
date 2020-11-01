@@ -1,0 +1,15 @@
+.page-main {
+  background-color: $bg-white;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 1200px;
+  }
+}

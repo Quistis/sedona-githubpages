@@ -1,0 +1,85 @@
+.hotel-booking {
+  background-color: $bg-white;
+
+  text-align: center;
+
+  padding-right: 20px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+
+  margin-bottom: 30px;
+}
+
+.hotel-booking__title {
+  font-size: $font-size-largest;
+  line-height: $line-height-big;
+  font-weight: 700;
+  color: $text-black;
+
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.hotel-booking__description {
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+  font-weight: 400;
+  color: $text-lightgrey;
+
+  margin: 0;
+  margin-bottom: 51px;
+}
+
+.hotel-booking__text-transposition {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel-booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 22px;
+  }
+
+  .hotel-booking__title {
+    display: block;
+
+    font-size: $font-size-even-larger;
+
+    margin-top: 27px;
+    margin-bottom: 30px;
+  }
+
+  .hotel-booking__description {
+    display: block;
+
+    width: 450px;
+
+    margin-bottom: 42px;
+  }
+
+  .hotel-booking__text-transposition {
+    display: block;
+  }
+
+  .hotel-booking__button {
+    width: 458px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotel-booking {
+    margin-bottom: 31px;
+  }
+
+  .hotel-booking__description {
+    margin-bottom: 47px;
+  }
+
+  .advantages-list__reason-wrapper--different-paddings {
+    padding-top: 32px;
+  }
+}
